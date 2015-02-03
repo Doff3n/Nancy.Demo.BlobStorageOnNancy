@@ -97,7 +97,6 @@
     <Content Include="Content\dropzone.js" />
     <Content Include="Content\images\spritemap%402x.png" />
     <Content Include="Content\images\spritemap.png" />
-    <Content Include="Readme.txt" />
     <Content Include="Web.config">
       <SubType>Designer</SubType>
     </Content>
