@@ -16,11 +16,11 @@ credentials which can be found when managing keys in the newly created azure sto
 The account name is the name of your storage.
 
 Example of connection string: DefaultEndpointsProtocol=https;AccountName=storagesample;AccountKey=KWPLd0rpW2T0U7K2pVpF8rYr1BgYtR7wYQk33AYiXeUoquiaY6o0TWqduxmPHlqeCNZ3LU0DHptbeIHy5l/Yhg==
+- 3. Create containers dynamically:
+http://localhost:65260/document/[containername]
 
-Create containers dynamically:
-http://localhost:65260/document/[container]
 
 Content negotiation on containers and base path/document:
-http://localhost:65260/document/[container].json
+http://localhost:65260/document/[containername].json
 http://localhost:65260/document.xml
 
