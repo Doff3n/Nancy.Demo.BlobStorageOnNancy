@@ -1,7 +1,7 @@
 **Nancy + Azure Blob storage demo**
 
 Azure has a Blob storage which is a data service for storing big amounts of unstructured data,
-such as text or binary data(images, videos etc), the data can be accessed worldwide via Azure's content via HTTP or HTTPS.
+such as text or binary data(images, videos etc), the data can be accessed worldwide via via HTTP or HTTPS.
 You can use Blob storage to expose data publicly to the world, or to store private data:
 http://azure.microsoft.com/en-us/documentation/services/storage/
 
