@@ -1,0 +1,21 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Containers</title>
+    <script src="~/content/dropzone.js"></script>
+    <link href="~/content/css/dropzone.css" rel="stylesheet" />
+    <link href="~/content/css/style.css" rel="stylesheet" />
+</head>
+    <body>
+        
+        <ul>
+            @foreach (var item in @Model.List)
+            {
+                <li><a href="~/documents/@item.Title">@item.Title</a> <a href="~/documents/delete/@item.Title">Delete</a></li>
+            }
+        </ul>
+        
+        
+      
+    </body>
+</html>
