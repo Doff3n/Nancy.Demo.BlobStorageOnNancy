@@ -1,0 +1,63 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Nancy.DemoApplication1</title>
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="~/content/scripts/dropzone.js"></script>
+    <link href="~/content/css/dropzone.css" rel="stylesheet" />
+
+    <link href="~/content/css/bootstrap.css" rel="Stylesheet" />
+    <link href="~/content/css/default.min.css" rel="Stylesheet" />
+
+    <script src="~/content/scripts/jquery.min.js"></script>
+    <script src="~/content/scripts/highlight.min.js"></script>
+    <script src="~/content/scripts/bootstrap.js"></script>
+
+    <link href="~/content/css/style.css" rel="stylesheet" />
+
+    <script>
+        $(document).ready(function () {
+            hljs.tabReplace = '    ';
+            hljs.initHighlightingOnLoad();
+        });
+    </script>
+
+    <style type="text/css">
+        body {
+            padding-top: 60px;
+            padding-bottom: 40px;
+        }
+    </style>
+
+</head>
+<body>
+
+    <div class="navbar navbar-fixed-top">
+        <div class="navbar-inner">
+            <div class="container">
+                <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </a>
+                <a class="brand" href="~/">Nancy.DemoApplication1</a>
+                <div class="nav-collapse">
+                    <ul class="nav">
+                        <li><a href="~/">Home</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="hero-unit">
+            @RenderBody()
+        </div>
+        
+    </div>
+</body>
+</html>

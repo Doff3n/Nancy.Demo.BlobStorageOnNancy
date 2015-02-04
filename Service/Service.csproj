@@ -97,12 +97,21 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Content\css\bootstrap-responsive.css" />
+    <Content Include="Content\css\bootstrap.css" />
     <Content Include="Content\css\basic.css" />
     <Content Include="Content\css\dropzone.css" />
     <Content Include="Content\css\style.css" />
-    <Content Include="Content\dropzone.js" />
-    <Content Include="Content\images\spritemap%402x.png" />
-    <Content Include="Content\images\spritemap.png" />
+    <Content Include="Content\css\default.min.css" />
+    <Content Include="Content\img\spritemap%402x.png" />
+    <Content Include="Content\img\spritemap.png" />
+    <Content Include="Content\img\glyphicons-halflings-white.png" />
+    <Content Include="Content\img\glyphicons-halflings.png" />
+    <Content Include="Content\nancy-vertical-bf-tb.png" />
+    <Content Include="Content\scripts\bootstrap.js" />
+    <Content Include="Content\scripts\dropzone.js" />
+    <Content Include="Content\scripts\highlight.min.js" />
+    <Content Include="Content\scripts\jquery.min.js" />
     <Content Include="Web.config">
       <SubType>Designer</SubType>
     </Content>
@@ -128,6 +137,8 @@
     <Content Include="Views\Index.cshtml" />
     <Content Include="Views\Containers.cshtml" />
     <Content Include="ConnectionStrings.config" />
+    <Content Include="Views\Shared\_LayoutPage.cshtml" />
+    <Content Include="Views\_ViewStart.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

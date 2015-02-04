@@ -1,35 +1,21 @@
-﻿<!DOCTYPE html>
-<html>
-<head>
-    <title>Documents - @Model.Container</title>
-    <script src="~/content/dropzone.js"></script>
-    <link href="~/content/css/dropzone.css" rel="stylesheet" />
-    <link href="~/content/css/style.css" rel="stylesheet" />
-</head>
-<body>
+﻿<form action='~/documents/upload/@Model.Container'
+      class="dropzone"
+      id="my-awesome-dropzone"></form>
 
-    <form action='~/documents/upload/@Model.Container'
-          class="dropzone"
-          id="my-awesome-dropzone"></form>
+<div class="flex-container">
+    @foreach (var item in @Model.List)
+    {
+        <div class="flex-item">
+            <figure>
 
-    <div class="flex-container">
-        @foreach (var item in @Model.List)
-            {
-            <div class="flex-item">
-                 <figure>
+                <img src="~/documents/@Model.Container/@item.Title" />
+                <figcaption>
+                    <a href="~/documents/@Model.Container/@item.Title">@item.Title</a>
+                    <a href="~/documents/delete/@Model.Container/@item.Title">Delete</a>
+                </figcaption>
+            </figure>
 
-                        <img src="~/documents/@Model.Container/@item.Title" />
-                        <figcaption>
-                            <a href="~/documents/@Model.Container/@item.Title">@item.Title</a>
-                            <a href="~/documents/delete/@Model.Container/@item.Title">Delete</a>
-                        </figcaption>
-                    </figure>
+        </div>
+    }
+</div>
 
-            </div>
-        }
-    </div>
-
-
-    
-</body>
-</html>

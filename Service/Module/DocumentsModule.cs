@@ -21,7 +21,6 @@ namespace Service.Module
 
             Get["/documents/{container}"] = _ =>
             {
-                var container = (string)_.container;
                 storage = new Storage(_.container);
                 var documents = storage.Documents();
                 documents.Container = _.container;
