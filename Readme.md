@@ -22,7 +22,7 @@ The account name is the name of your storage.
 3. Build and run the web application
 4. Create containers dynamically(GET request):
   - *http://localhost:65260/document/{containername}*
-5. Uploading of files can be done via http Post to:
+5. Uploading of files can be done via http POST to:
 http://localhost:65260/documents/upload/{container} or via the web interface
 6. Consume data from a mobile app or your new web app on containers and base path/document:
   - *http://localhost:65260/document/{containername}.json*
