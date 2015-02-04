@@ -44,14 +44,6 @@ namespace Service.Module
                 return documents;
             };
 
-            Get["/documents/image/{container}/{name}"] = _ =>
-            {
-                storage = new Storage(_.container);
-                var documents = storage.Documents();
-                documents.Container = _.container;
-                return documents;
-            };
-
             Get["/documents/{container}/{name}", true] = async (ctx, ct) =>
             {
                 storage = new Storage(ctx.container);
