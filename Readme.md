@@ -9,6 +9,8 @@ NancyFx is a very lightweight web framework which is used in this project to ser
 and to provide content negotiation almost out of the box:
 http://nancyfx.org/
 
+This demo shows how to use Azure storage on NancyFx resulting in a lightweight service ontop of Azure
+
 In order to use this project you need to:
 - 1. Log into your Azure account and create a new storage data service
 - 2. Edit the ConnectionStrings.config in this project. Add your own Azure storage account
@@ -18,10 +20,13 @@ The account name is the name of your storage.
 Example of connection string: DefaultEndpointsProtocol=https;AccountName=storagesample;AccountKey=KWPLd0rpW2T0U7K2pVpF8rYr1BgYtR7wYQk33AYiXeUoquiaY6o0TWqduxmPHlqeCNZ3LU0DHptbeIHy5l/Yhg==
 - 3. Build and run the web application
 - 4. Create containers dynamically:
-http://localhost:65260/document/[containername]
+http://localhost:65260/document/{containername}
 
 
 Content negotiation on containers and base path/document:
-http://localhost:65260/document/[containername].json
+http://localhost:65260/document/{containername}.json
 http://localhost:65260/document.xml
+
+Uploading of files can be done via http Post to:
+http://localhost:65260/documents/upload/{container}
 
