@@ -25,6 +25,6 @@ Content negotiation on containers and base path/document:
 http://localhost:65260/document/{containername}.json
 http://localhost:65260/document.xml
 
-Uploading files can be done via http Post to:
+Uploading of files can be done via http Post to:
 http://localhost:65260/documents/upload/{container}
 
