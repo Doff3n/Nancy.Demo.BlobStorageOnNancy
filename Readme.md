@@ -20,7 +20,7 @@ This demo shows how to use Azure storage on NancyFx resulting in a lightweight s
 credentials which can be found when managing keys in the newly created azure storage data service. 
 The account name is the name of your storage.
 3. Build and run the web application
-4. Create containers dynamically:
+4. Create containers dynamically(GET request):
   - *http://localhost:65260/document/{containername}*
 5. Uploading of files can be done via http Post to:
 http://localhost:65260/documents/upload/{container} or via the web interface
