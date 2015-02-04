@@ -18,10 +18,13 @@ The account name is the name of your storage.
 Example of connection string: DefaultEndpointsProtocol=https;AccountName=storagesample;AccountKey=KWPLd0rpW2T0U7K2pVpF8rYr1BgYtR7wYQk33AYiXeUoquiaY6o0TWqduxmPHlqeCNZ3LU0DHptbeIHy5l/Yhg==
 - 3. Build and run the web application
 - 4. Create containers dynamically:
-http://localhost:65260/document/[containername]
+http://localhost:65260/document/{containername}
 
 
 Content negotiation on containers and base path/document:
-http://localhost:65260/document/[containername].json
+http://localhost:65260/document/{containername}.json
 http://localhost:65260/document.xml
+
+Uploading files can be done via http Post to:
+http://localhost:65260/documents/upload/{container}
 
