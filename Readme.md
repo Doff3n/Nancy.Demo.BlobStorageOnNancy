@@ -21,12 +21,12 @@ credentials which can be found when managing keys in the newly created azure sto
 The account name is the name of your storage.
 3. Build and run the web application
 4. Create containers dynamically:
-- *http://localhost:65260/document/{containername}*
+  - *http://localhost:65260/document/{containername}*
 5. Uploading of files can be done via http Post to:
 http://localhost:65260/documents/upload/{container} or via the web interface
 6. Consume data from a mobile app or your new web app on containers and base path/document:
-- *http://localhost:65260/document/{containername}.json*
-- *http://localhost:65260/document.xml*
+  - *http://localhost:65260/document/{containername}.json*
+  - *http://localhost:65260/document.xml*
 
 Example of connection string: 
 ```xml
